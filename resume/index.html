@@ -2,20 +2,22 @@
 layout: default
 title: Brian Chase's Resume
 ---
-<p><a href="/Brian Chase - resume.pdf">link to pdf</a></p>
+<p><a href="/Brian Chase - resume.pdf" target="new">link to pdf</a></p>
 <br>
 <section id="Education">
   <div id="JHU">
-    <h3>Johns Hopkins University</h3>
-    <span><<em>M.S. Applied Economics</em>, 2020</span>
+    {% include education.html university="Johns Hopkins University" degree="M.S. Applied Economics" year="2020"%}
   </div>
   <div id="WM">
-    <h3>College of William & Mary</h3>
-    <span><<em>B.S. Physics, Economics</em>, 2012</span>
+    {% include education.html university="College of William & Mary" degree="B.S. Physics, Economics" year="2012"%}
   </div>
 </section>
 <section id="Experience">
-  <div id="BASIS">
-
-  </div>
+  <list>
+    <ul>BASIS</ul>
+    <ul>Hangzhou Normal University Affiliated High School</ul>
+    <ul>Hangzhou Number 4 High School</ul>
+    <ul>Louis Berger International</ul>
+    <ul>Bear American English School</ul>
+  </list>
 </section>
