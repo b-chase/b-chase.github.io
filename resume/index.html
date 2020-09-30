@@ -2,10 +2,12 @@
 layout: default
 title: Brian Chase's Resume
 ---
-<p><a href="/Brian Chase - resume.pdf" target="new">link to pdf</a></p>
+<h1>Brian C Chase</h1>
+<h2>Data Analysis and Economics Research</h2>
+<h3><em><a href="/Brian Chase - resume.pdf" target="new">link to pdf</a></em></h3>
 <br>
 <section id="Education">
-  <<h2>Education</h2>
+  <h2>Education</h2>
   <div id="JHU">
     {% include education.html university="Johns Hopkins University" degree="M.S. Applied Economics" year="2020"%}
   </div>
@@ -15,11 +17,8 @@ title: Brian Chase's Resume
 </section>
 <section id="Experience">
   <h2>Experience</h2>
-  <ul>
-    <li>BASIS International School Hangzhou</li>
-    <li>Hangzhou Normal University Affiliated High School</li>
-    <li>Hangzhou Number 4 High School</li>
-    <li>Louis Berger International</li>
-    <li>Bear American English School</li>
-  </ul>
+  {% include experience.html role="Science & Math Instductor" workplace="BASIS International School Hangzhou" city="Hangzhou, China" when="2015 - 2020" %}
+  {% include experience.html role="Project Management Assistant" workplace="Louis Berger International" city="Riyadh, Saudi Arabia" when="2014-2015" %}
+  {% include experience.html role="English Teacher" workplace="Bear American English School" city="Hangzhou, China" when="2012-2014" %}
+
 </section>
