@@ -2,10 +2,23 @@
 layout: default
 title: Brian Chase's Resume
 ---
+<header>
 <h1>Brian C Chase</h1>
 <h2>Data Analysis and Economics Research</h2>
-<h3><em><a href="/Brian Chase - resume.pdf" target="new">link to pdf</a></em></h3>
-<br>
+<p><em><a href="/Brian Chase - resume.pdf" target="new">link to pdf</a></em></p>
+</header>
+<section id="education">
+  <h2>Education</h2>
+  {% for educ in site.resume.education %}
+    <h3>{{ educ.name }}</h3>
+    <em>{{ educ.degree }}, {{ educ.date }}</em>
+    {{ educ.content }}
+  {% endfor %}
+</section>
+<section id="experience">
+  <h2>Experience</h2>
+</section>
+
 <section id="Education">
   <h2>Education</h2>
   <div id="JHU">
