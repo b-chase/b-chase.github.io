@@ -17,6 +17,11 @@ title: Brian Chase's Resume
 </section>
 <section id="experience">
   <h2>Experience</h2>
+  {% for exper in site.resume.experience %}
+    <h3>{{ exper.role }}</h3>
+    <strong>{{ exper.employer }}, {{ exper.years }}</strong>
+    {{ exper.content }}
+  {% endfor %}
 </section>
 
 <section id="Education">
