@@ -12,7 +12,7 @@ title: Brian Chase's Resume
   {% for educ in site.education %}
     <h3>{{ educ.name }}</h3>
     <em>{{ educ.degree }}, {{ educ.date }}</em>
-    {{ educ.content }}
+    {{ educ.content | markdownify }}
   {% endfor %}
 </section>
 <section id="experience">
@@ -20,7 +20,7 @@ title: Brian Chase's Resume
   {% for exper in site.experience %}
     <h3>{{ exper.role }}</h3>
     <strong>{{ exper.employer }}, {{ exper.years }}</strong>
-    {{ exper.content }}
+    {{ exper.content | markdownify }}
   {% endfor %}
 </section>
 

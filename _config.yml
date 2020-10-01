@@ -2,5 +2,7 @@ name: Brian Chase, Economic Researcher
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 collections:
-  - education
-  - experience
+  education:
+    output: true
+  experience:
+    output: true
