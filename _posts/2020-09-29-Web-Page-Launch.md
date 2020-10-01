@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Launching my web page"
+title: "Soft-Launching my web page"
 date: 2020-09-29
 ---
 # Soft-Launching my Web Page
