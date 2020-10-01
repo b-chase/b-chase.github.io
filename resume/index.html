@@ -13,6 +13,7 @@ title: Brian Chase's Resume
     <h3>{{ education.name }}</h3>
     <em>{{ education.degree }}, {{ education.year }}</em>
     {{ education.content | markdownify }}
+    <br>
   {% endfor %}
 </section>
 <section class="experience">
@@ -21,5 +22,6 @@ title: Brian Chase's Resume
     <h3>{{ experience.role }}</h3>
     <h4>{{ experience.employer }}, {{ experience.years }}</h4>
     {{ experience.content | markdownify }}
+    <br>
   {% endfor %}
 </section>
