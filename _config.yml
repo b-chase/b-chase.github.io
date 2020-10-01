@@ -3,8 +3,8 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 collections:
   education:
+    sort_by: order
     output: true
-    sort_by: year
   experience:
-    sort_by: years
+    sort_by: order
     output: true
