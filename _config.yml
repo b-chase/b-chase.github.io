@@ -4,5 +4,7 @@ permalink: /blog/:year/:month/:day/:title
 collections:
   education:
     output: true
+    sort_by: year
   experience:
+    sort_by: years
     output: true
