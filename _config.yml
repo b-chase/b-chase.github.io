@@ -3,8 +3,15 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 collections:
   education:
-    sort_by: order
+    order:
+      - johns_hopkins.md
+      - william_mary.md
     output: true
   experience:
-    sort_by: order
     output: true
+    order:
+      - basis.md
+      - hznorm.md
+      - hz4z.md
+      - berger.md
+      - bear_american.md
