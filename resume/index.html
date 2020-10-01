@@ -9,18 +9,18 @@ title: Brian Chase's Resume
 </section>
 <section id="education">
   <h2>Education</h2>
-  {% for educ in site.education %}
-    <h3>{{ educ.name }}</h3>
-    <em>{{ educ.degree }}, {{ educ.date }}</em>
-    {{ educ.content | markdownify }}
+  {% for education in site.education %}
+    <h3>{{ education.name }}</h3>
+    <em>{{ education.degree }}, {{ education.date }}</em>
+    {{ education.content | markdownify }}
   {% endfor %}
 </section>
 <section id="experience">
   <h2>Experience</h2>
-  {% for exper in site.experience %}
-    <h3>{{ exper.role }}</h3>
-    <strong>{{ exper.employer }}, {{ exper.years }}</strong>
-    {{ exper.content | markdownify }}
+  {% for experience in site.experience %}
+    <h3>{{ experience.role }}</h3>
+    <strong>{{ experience.employer }}, {{ experience.years }}</strong>
+    {{ experience.content | markdownify }}
   {% endfor %}
 </section>
 
