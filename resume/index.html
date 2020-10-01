@@ -7,7 +7,7 @@ title: Brian Chase's Resume
 <h2>Data Analysis and Economics Research</h2>
 <p><em><a href="/Brian Chase - resume.pdf" target="new">link to pdf</a></em></p>
 </section>
-<section id="education">
+<section class="education">
   <h2>Education</h2>
   {% for education in site.education %}
     <h3>{{ education.name }}</h3>
@@ -15,28 +15,11 @@ title: Brian Chase's Resume
     {{ education.content | markdownify }}
   {% endfor %}
 </section>
-<section id="experience">
+<section class="experience">
   <h2>Experience</h2>
   {% for experience in site.experience %}
     <h3>{{ experience.role }}</h3>
     <strong>{{ experience.employer }}, {{ experience.years }}</strong>
     {{ experience.content | markdownify }}
   {% endfor %}
-</section>
-
-<section id="Education">
-  <h2>Education</h2>
-  <div id="JHU">
-    {% include education.html university="Johns Hopkins University" degree="M.S. Applied Economics" year="2020"%}
-  </div>
-  <div id="WM">
-    {% include education.html university="College of William & Mary" degree="B.S. Physics, Economics" year="2012"%}
-  </div>
-</section>
-<section id="Experience">
-  <h2>Experience</h2>
-  {% include experience.html role="Science & Math Instductor" workplace="BASIS International School Hangzhou" city="Hangzhou, China" when="2015 - 2020" %}
-  {% include experience.html role="Project Management Assistant" workplace="Louis Berger International" city="Riyadh, Saudi Arabia" when="2014-2015" %}
-  {% include experience.html role="English Teacher" workplace="Bear American English School" city="Hangzhou, China" when="2012-2014" %}
-
 </section>
