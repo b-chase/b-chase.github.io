@@ -2,7 +2,7 @@
 employer: Hangzhou Normal University Affiliated High School
 role: Calculus Instructor
 city: Hangzhou, China
-years: 2016-2017
+years: 2017-2018
 order: 2
 ---
 * Overhauled curriculum to center around key topics in calculus and tracked students’ individual progress using array formulas in Excel
