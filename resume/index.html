@@ -19,7 +19,7 @@ title: Brian Chase's Resume
   <h2>Experience</h2>
   {% for experience in site.experience %}
     <h3>{{ experience.role }}</h3>
-    <strong>{{ experience.employer }}, {{ experience.years }}</strong>
+    <h4>{{ experience.employer }}, {{ experience.years }}</h4>
     {{ experience.content | markdownify }}
   {% endfor %}
 </section>
