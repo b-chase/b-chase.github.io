@@ -11,7 +11,7 @@ title: Brian Chase's Resume
   <h2>Education</h2>
   {% for education in site.education %}
     <h3>{{ education.name }}</h3>
-    <em>{{ education.degree }}, {{ education.date }}</em>
+    <em>{{ education.degree }}, {{ education.year }}</em>
     {{ education.content | markdownify }}
   {% endfor %}
 </section>
